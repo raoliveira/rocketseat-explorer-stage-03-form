@@ -10,113 +10,104 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="page">
     <header>
-      <h1>Crie e compartilhe seu evento.</h1>
-      <p>O primeiro passo, é preencher esse
-        formulário de inscrição.</p>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
     </header>
     <form id="my-form">
 
       <fieldset>
-        <div class="fieldset-wrapper">
-          <legend>Informações do Evento</legend>
+        <legend>Informações pessoais</legend>
+        <div class="col-2"> 
 
           <div class="input-wrapper">
-            <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
+            <label for="mentory-name">Nome</label>
             <input 
               type="text" 
-              id="event-title"
+              id="mentory-name"
               required
-              minlength="8" />
+              />
           </div>
-  
           <div class="input-wrapper">
-            <label for="event-link">Link do evento <span>(comece com https://)</span></label>
-            <input type="url" id="event-link" />
-          </div>
-
-          <div class="input-wrapper">
-            <label for="event-whatsapp">Whatsapp para contato <span>(somente números)</span></label>
-            <input type="number" id="event-whatsapp" />
-          </div>
-
-          <div class="input-wrapper">
-            <label for="event-info">Informações extras</label>
-            <textarea id="event-info"></textarea>
-          </div>
-
-          <div class="input-wrapper">
-            <label for="event-category">Categoria</label>
-            <select id="event-category">
-              <option value="live">Ao vivo</option>
-              <option value="podcast">Podcast</option>
-              <option value="mentorship">Mentoria</option>
-            </select>
-          </div>
-        </div>
-      </fieldset>
-
-
-      <fieldset>
-        <div class="fieldset-wrapper">
-          <legend>Privacidade</legend>
-
-          <div class="input-wrapper">
-            <label for="event-email">E-mail do administrador <span>(digite um email válido)</span></label>
-            <input type="email" id="event-email" />
-          </div>
-
-          <div class="input-wrapper">
-            <label for="event-password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+            <label for="mentory-lastname">Sobrenome</label>
             <input 
-              type="password" 
-              id="event-password"
-              minlength="8" />
+              type="text" 
+              id="mentory-lastname"
+              required
+              />
           </div>
-
-          <div class="checkbox-wrapper">
-            <input type="checkbox" id="event-private" />
-            <label for="event-private">Evento privado</label>
-          </div>
-
         </div>
+
+          <div class="input-wrapper">
+            <label for="mentory-email">Email <span>(digite um email válido)</span></label>
+            <input type="email" id="mentory-email" required/>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="mentory-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" id="mentory-password" required/>
+          </div>
+
       </fieldset>
-
-
       <fieldset>
-        <div class="fieldset-wrapper">
-          <legend>Dia e hora</legend>
-
-          <div class="col-3">
-            <div class="input-wrapper">
-              <label for="event-date">Data</label>
-              <input type="date" id="event-date" />
-            </div>
-  
-            <div class="input-wrapper">
-              <label for="event-begin">Das</label>
-              <input type="time" id="event-begin" />
-            </div>
-
-            <div class="input-wrapper">
-              <label for="event-end">Até</label>
-              <input type="time" id="event-end" />
-            </div>
+        <legend>Informações do mentor</legend> 
+        <div class="fieldset-wrapper"> 
+          <div class="input-wrapper">
+            <label for="mentor-name">Nome do mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" id="mentor-name" />
           </div>
-       
-
         </div>
-      </fieldset>
+        </fieldset>
+
+        <fieldset>
+
+          <div class="fieldset-wrapper"> 
+            <legend>Seus horários disponíveis</legend> 
+          
+        <h2>Primeira Mentoria</h2>
+        <div class="col-3">
+          
+          <div class="input-wrapper">
+            <label for="first-mentory-date">Data <span>(DD/MM/YYYY)</span></label>
+            <input type="date" id="first-mentory-date" />
+          </div>
+          <div class="input-wrapper">
+            <label for="first-mentory-from">Das</label>
+            <input type="time" id="first-mentory-from" />
+          </div>
+          <div class="input-wrapper">
+            <label for="first-mentory-to">Até</label>
+            <input type="time" id="first-mentory-to" />
+          </div>
+        </div>
+          <h2>Segunda Mentoria</h2>
+        <div class="col-3">
+          <div class="input-wrapper">
+            <label for="first-mentory-date">Data <span>(DD/MM/YYYY)</span></label>
+            <input type="date" id="first-mentory-date" />
+          </div>
+          <div class="input-wrapper">
+            <label for="first-mentory-from">Das</label>
+            <input type="time" id="first-mentory-from" />
+          </div>
+          <div class="input-wrapper">
+            <label for="first-mentory-to">Até</label>
+            <input type="time" id="first-mentory-to" />
+          </div>
+          </div>
+        </fieldset>
+
+      
 
     </form>
     <footer>
       <button 
         class="button" 
-        form="my-form">Salvar evento</button>
+        form="my-form">SALVAR</button>
     </footer>
   </div>
 </body>
